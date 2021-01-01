@@ -19,12 +19,17 @@ version = '0.0.1'
 group = 'ehu.isad'
 
 // ext.moduleName = 'gradlejavafxhelloworld'
-mainClassName = "$moduleName/ehu.isad.App"
+mainClassName = "$moduleName/ehu.isad.Main"
 
 
 javafx {
     version = "12"
-    modules = [ ]
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing', 'javafx.web' ]
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'junit:junit:4.12'
 }
 
 

@@ -1,8 +1,9 @@
-open module gradlejavafx {
+open module javafx {
   requires javafx.controls;
   requires javafx.graphics;
   requires javafx.fxml;
   requires javafx.swing;
   requires javafx.web;
-  exports ehu.isad;
+    requires com.google.gson;
+    exports ehu.isad;
 }
